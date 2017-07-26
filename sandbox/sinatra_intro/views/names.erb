@@ -1,0 +1,7 @@
+<% @names.each do |name| %>  <!-- note the missing `=` -->
+  <p><%= name %></p>
+<% end %>
+<form method='get' action='/names'>
+  <input type='search' name='student_name'>
+  <input type='submit'>
+</form>
